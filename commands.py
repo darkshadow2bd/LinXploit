@@ -32,7 +32,7 @@ COMMANDS = [
     {'command_string': 'sudo ping 127.0.0.1 -s 65000 -f', 'requires_root': True, 'description': 'Floods loopback interface, DoS local networking', 'required_tools': ['ping']},
     {'command_string': 'sudo cp /dev/zero /bin/ls', 'requires_root': True, 'description': 'Replaces `ls` with zero device, breaks command', 'required_tools': ['cp']},
     {'command_string': 'sudo cp /dev/zero /bin/bash', 'requires_root': True, 'description': 'Breaks bash shell, system unusable', 'required_tools': ['cp']},
-    {'command_string': 'while true; do wget http://example.com & done', 'requires_root': False, 
+    {'command_string': 'while true; do wget http://www.textfiles.com/etext/AUTHORS/SHAKESPEARE/shakespeare-macbeth-46.txt & done', 'requires_root': False, 
 'description': 'Infinite network requests, DoS network or remote server', 'required_tools': ['wget']},
     {'command_string': 'sudo sed -i \'s/SELINUX=enforcing/SELINUX=disabled/\' /etc/selinux/config', 
 'requires_root': True, 'description': 'Disables SELinux, reducing security enforcement', 'required_tools': 
